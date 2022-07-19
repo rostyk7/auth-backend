@@ -1,0 +1,12 @@
+FROM node:14.17-alpine3.14
+
+WORKDIR /home/app
+
+COPY package.json /home/app/
+COPY yarn.lock /home/app/
+
+RUN yarn
+
+COPY . /home/app/
+
+CMD ["yarn", "start"]
