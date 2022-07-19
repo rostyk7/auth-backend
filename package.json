@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "launch": "yarn test & yarn start",
     "dev": "nodemon src/index.js",
     "test": "jest --runInBand"
   },
